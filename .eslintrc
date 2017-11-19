@@ -164,7 +164,6 @@
       "allowAllCaps": true,
       "ignore": [],
     }],
-    "react/jsx-sort-props": "warn",
     "react/jsx-tag-spacing": "warn",
     "react/jsx-uses-react": "warn",
     "react/jsx-uses-vars": "warn",

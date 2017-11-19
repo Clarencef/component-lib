@@ -19,6 +19,13 @@ module.exports = {
       loaders:["style-loader", "css-loader", "sass-loader"]
     }]
   },
+  resolve: {
+    modules: ['node_modules'],
+    extensions: ['.jsx','.js','.scss'],
+    alias: {
+      components: path.resolve(__dirname,'lib'),
+    },
+  },
   devServer: {
     contentBase: './',
     historyApiFallback: true
