@@ -1,14 +1,6 @@
-var webpack = require('webpack');
-var path = require('path');
+const path = require("path");
 
 module.exports = {
-  entry: [
-    path.join(__dirname, 'src/index.js')
-  ],
-  output: {
-    path: __dirname + '/dist',
-    filename: 'bundle.js',
-  },
   module: {
     loaders: [{
       test: /\.(js|jsx)$/,
@@ -26,8 +18,4 @@ module.exports = {
       components: path.resolve(__dirname,'lib'),
     },
   },
-  devServer: {
-    contentBase: './',
-    historyApiFallback: true
-  }
-};
+}
